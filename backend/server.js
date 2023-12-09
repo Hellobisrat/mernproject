@@ -23,7 +23,7 @@ app.use('/api/workouts',workoutRoutes)
 
 //connect dd
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONG_URI)
 .then(()=>{
   // listen for request
   app.listen(process.env.PORT,()=>{
